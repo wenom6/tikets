@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання квитків</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+    <header>
+        <h1>Подія року: Концерт у вашому місті!</h1>
+        <nav>
+        <ul>
+            <li><a href="#about-event">Про подію</a></li>
+            <li><a href="#tickets">Квитки</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section id="about-event">
+            <h2>Про подію</h2>
+            <p>Приєднуйтесь до незабутнього концерту із зірками української сцени. Це подія, яку не можна пропустити! Насолоджуйтесь живою музикою, неймовірною атмосферою та хорошим настроєм.</p>
+            <p><b>Дата:</b> 25 березня 2025 року</p>
+            <p><b>Місце:</b> Концертна зала "Україна" місто Київ.</p>
+        </section>
+        <section id="tickets">
+            <h2>Квитки</h2>
+            <p>Виберіть тип квитка та заповніть форму бронювання:</p>
+            <form action="/submit-ticket" method="POST">
+                <select name="ticket-type" id="ticket-type" required>
+                    <option value="standard">Стандартний: 500грн.</option>
+                    <option value="VIP">VIP: 1000 грн.</option>
+                </select>
+                <input type="text" id="name" placeholder="Ваше ім'я" required>
+                <input type="text" id="email" 
+placeholder="example@gmail.com
+" required>
+                <input type="text"id="phone" placeholder="+380 XX XXX XX XX" required>
+                <button type="submit">Забронювати квиток</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>контакти</h2>
+            <p>Зв'яжіться з нами, якщо маєте запитання:</p>
+            <address>
+            <p><a 
+href="mailto:info@tickets.ua
+">
+info@tickets.ua
+</a></p>
+            <p><a href="tel:+380967553456">+380967553456</a></p>
+            </address>
+        </section>
+<footer>&copy; 2025 Бронювання квитків. Усі права захищено</footer>
+    </main> 
+</body>
+</html>
