@@ -8,52 +8,71 @@
 </head>
 <body>
     <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+
     <header>
         <h1>Подія року: Концерт у вашому місті!</h1>
         <nav>
-        <ul>
-            <li><a href="#about-event">Про подію</a></li>
-            <li><a href="#tickets">Квитки</a></li>
-            <li><a href="#contact">Контакти</a></li>
-        </ul>
+            <ul>
+                <li><a href="#about-event">Про подію</a></li>
+                <li><a href="#tickets">Квитки</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
         </nav>
     </header>
+
     <main id="main-content">
         <section id="about-event">
             <h2>Про подію</h2>
-            <p>Приєднуйтесь до незабутнього концерту із зірками української сцени. Це подія, яку не можна пропустити! Насолоджуйтесь живою музикою, неймовірною атмосферою та хорошим настроєм.</p>
-            <p><b>Дата:</b> 25 березня 2025 року</p>
-            <p><b>Місце:</b> Концертна зала "Україна" місто Київ.</p>
+            <p>
+                Приєднуйтесь до незабутнього концерту із зірками української сцени!  
+                Вас чекають найпопулярніші хіти, неймовірне світлове шоу та атмосфера свята.  
+                На сцені виступатимуть: <strong>MONATIK, Тіна Кароль, The Hardkiss</strong> та інші зірки, які подарують вам вечір емоцій.
+            </p>
+
+            <div>
+                <img src="https://cdn4.suspilne.media/images/resize/794x0.1/927354eb384f2b64.jpg" alt="Гурт виступає на сцені під час концерту">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ-c9l-wVoHCooxVbsfceFkQdGQcWUqvdLOA&s" alt="Співачка виконує пісню на сцені">
+                <img src="https://st5.depositphotos.com/5189659/71847/i/450/depositphotos_718476964-stock-photo-fans-raise-hands-enjoy-music.jpg" alt="Глядачі насолоджуються концертом">
+            </div>
+
+            <p><strong>Дата:</strong> 25 березня 2025 року</p>
+            <p><strong>Місце:</strong> Концертна зала "Україна", місто Київ</p>
         </section>
+
         <section id="tickets">
             <h2>Квитки</h2>
             <p>Виберіть тип квитка та заповніть форму бронювання:</p>
             <form action="/submit-ticket" method="POST">
+                <label for="ticket-type">Оберіть тип квитка:</label>
                 <select name="ticket-type" id="ticket-type" required>
-                    <option value="standard">Стандартний: 500грн.</option>
-                    <option value="VIP">VIP: 1000 грн.</option>
+                    <option value="">-- Виберіть квиток --</option>
+                    <option value="standard">Стандартний: 500 грн</option>
+                    <option value="VIP">VIP: 1000 грн</option>
                 </select>
-                <input type="text" id="name" placeholder="Ваше ім'я" required>
-                <input type="text" id="email" 
-placeholder="example@gmail.com
-" required>
-                <input type="text"id="phone" placeholder="+380 XX XXX XX XX" required>
+
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380 XX XXX XX XX" required>
+
                 <button type="submit">Забронювати квиток</button>
             </form>
         </section>
+
         <section id="contact">
-            <h2>контакти</h2>
+            <h2>Контакти</h2>
             <p>Зв'яжіться з нами, якщо маєте запитання:</p>
             <address>
-            <p><a 
-href="mailto:info@tickets.ua
-">
-info@tickets.ua
-</a></p>
-            <p><a href="tel:+380967553456">+380967553456</a></p>
+                <p><a href="mailto:info@tickets.ua">info@tickets.ua</a></p>
+                <p><a href="tel:+380967553456">+380 96 755 34 56</a></p>
             </address>
         </section>
-<footer>&copy; 2025 Бронювання квитків. Усі права захищено</footer>
-    </main> 
+
+        <footer>&copy; 2025 Бронювання квитків. Усі права захищено.</footer>
+    </main>
 </body>
 </html>
